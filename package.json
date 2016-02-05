@@ -1,0 +1,23 @@
+{
+  "name": "minimal-webpack-boilerplate",
+  "version": "0.0.1",
+  "description": "Minimal webpack boilerplate",
+  "scripts": {
+    "clean": "rimraf dist",
+    "build:webpack": "NODE_ENV=production webpack --config webpack.config.prod.js",
+    "build": "npm run clean && npm run build:webpack",
+    "start": "webpack-dev-server --config webpack.config.dev.js --inline --hot"
+  },
+  "author": "Christoph Geschwind <christophgeschwind@gmail.com> (https://github.com/1st8)",
+  "contributors": [
+    "Alexander Heinecke <alex60015@gmail.com> (https://github.com/2minemaster2)"
+  ],
+  "license": "Unlicense",
+  "dependencies": {
+    "webpack": "^1.12.13"
+  },
+  "devDependencies": {
+    "rimraf": "^2.5.1",
+    "webpack-dev-server": "^1.14.1"
+  }
+}
